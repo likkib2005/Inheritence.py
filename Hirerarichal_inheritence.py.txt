@@ -1,0 +1,48 @@
+class Human:
+    def eat(self):
+        print("I can eat")
+    def work(self):
+        print("I can work")
+class Male(Human):
+    def work(self):
+        print("I can code")
+    def code(self):
+        print("I can test")
+class Female(Human):
+    def sleep(self):
+        print("I can sleep")
+Female_1=Female()
+Female_1.work()
+Male_1=Male()
+Male_1.work()
+    
+
+class Human:
+    def __init__(self,name,age):
+        self.name=name
+        self.age=age
+    def work(self):
+        print("I can work")
+class Male(Human):
+    def __init__(self,name,age,address,num_heart):
+        Human. __init__(self,name,age)
+        self.num_eyes=2
+        self.num_nose=1
+        self.address=address
+        self.num_heart=num_heart
+    def sleep(self):
+        print("I can sleep")
+class Female(Human):
+    def __init__(self,name,age,language):
+        Human. __init__(self,name,age)
+        self.language=language
+    def eat(self):
+        print("I can eat")
+Female_1=Female("likhitha",20,"python")
+print(Female_1.language)
+print(Female_1.name)
+print(Female_1.age)
+Male_1=Male("maha","palamaner",2,20)
+print(Male_1.address)
+print(Male_1.name)
+ 
